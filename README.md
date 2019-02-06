@@ -13,7 +13,7 @@ for문을 할 때 index와 value가 같이 나오게 할 수 있는 함수
 - [Convention](https://spoqa.github.io/2012/08/03/about-python-coding-convention.html)  
 python 코딩 스타일 가이드
 - [Asterisk](https://mingrammer.com/understanding-the-asterisk-of-python/)  
-python에서 * 사용벚 이해하기
+python에서 * 사용법 이해하기
 - [Python 블로그](https://beomi.github.io)  
 Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 
@@ -30,7 +30,7 @@ Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 
 - [x] 크롤러를 class로 만들어서 코드에 적용해보기.
 
-_ [ ] Selenium을 이용해서 가져오기 어려운 정보 크롤링
+- [ ] Selenium을 이용해서 가져오기 어려운 정보 크롤링
 
 #### data 정리
 - 쉽게 가져올 수 있는 것  
