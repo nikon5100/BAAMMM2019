@@ -10,6 +10,12 @@ Pandas는 데이터 분석시에 사용하는 라이브러리
 telegram에 새글이 뜨면 알림을 주는 봇을 만드는 글  
 - [Enumerate](http://book.pythontips.com/en/latest/enumerate.html)  
 for문을 할 때 index와 value가 같이 나오게 할 수 있는 함수
+- [Convention](https://spoqa.github.io/2012/08/03/about-python-coding-convention.html)  
+python 코딩 스타일 가이드
+- [Asterisk](https://mingrammer.com/understanding-the-asterisk-of-python/)  
+python에서 * 사용법 이해하기
+- [Python 블로그](https://beomi.github.io)  
+Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 
 #### TODO
 - [x] XlsxWriter를 이용해서 메타데이터를 파일을 만든는 코드를 만들어봅시다.  
@@ -19,10 +25,12 @@ for문을 할 때 index와 value가 같이 나오게 할 수 있는 함수
 [Tutorial2](https://xlsxwriter.readthedocs.io/tutorial02.html)  
 [Format Class](https://xlsxwriter.readthedocs.io/format.html)  
 
-- [ ] `BeautifulSoup4`를 이용해 간단히 가져올 수 있는 정보들 찍어내기.  
+- [x] `BeautifulSoup4`를 이용해 간단히 가져올 수 있는 정보들 찍어내기.  
 [Navigating Tree](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#navigating-the-tree)
 
-- [ ] 크롤러를 class로 만들어서 코드에 적용해보기.
+- [x] 크롤러를 class로 만들어서 코드에 적용해보기.
+
+- [ ] Selenium을 이용해서 가져오기 어려운 정보 크롤링
 
 #### data 정리
 - 쉽게 가져올 수 있는 것  
@@ -39,3 +47,8 @@ Pandas 와 XlsxWriter Tutorial 링크를 올림.
 - 2019/01/13  
 메타데이터의 기본 틀 만듦.  
 크롤러로 기본적인 정보들 가져오는 것 시작.  
+- 2019/01/26  
+클래스로 만들기 시작
+- 2019/02/02  
+class로 만든거 코드 리뷰 밑 리팩터링  
+selenium으로 크롤링하기 
