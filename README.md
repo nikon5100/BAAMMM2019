@@ -42,10 +42,12 @@ Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 
 #### 사소한 팁
 - `worksheet.set_column` 이란 함수에서 width 인자를 넘겨 칸의 크기를 조정할 수 있다.  
-`worksheet.set_column(0, 0, 20)   # Column  A   width set to 20.  
+```
+worksheet.set_column(0, 0, 20)   # Column  A   width set to 20.  
 worksheet.set_column(1, 3, 30)   # Columns B-D width set to 30.  
 worksheet.set_column('E:E', 20)  # Column  E   width set to 20.  
-worksheet.set_column('F:H', 30)  # Columns F-H width set to 30.` 
+worksheet.set_column('F:H', 30)  # Columns F-H width set to 30.
+```   
 - `selenium`에서 웹에서 클릭 등 작업을 하고 난 뒤 바뀐 내용을 크롤링 하고자 할 때,  
   `time.sleep(2)` 와 같은 코드로 2초 정도(컴퓨터 사양에 따라 다름) 기다린 다음,  
   웹에서 내용이 바뀔 만큼 충분히 기다려 주고나서 크롤링 해야한다. 
