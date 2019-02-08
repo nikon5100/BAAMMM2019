@@ -15,6 +15,9 @@ class Frame(object):
         self.Details = kwargs.get('details', '')
         self.Article_title = kwargs.get('article_title', '')
         self.Article_url = kwargs.get('article_url', '')
+        self.Modi_result = kwargs.get('modi_result', '')
+        self.Org_result = kwargs.get('org_result', '')
+        self.Is_modified = kwargs.get('is_modified', '')
 
         self.fact_descriptions = (
             ['팩트', '서버번호', self.Server_number],
@@ -42,9 +45,9 @@ class Frame(object):
             ['', '검증근거/출처 URL', ''],
             ['', '검증기사제목', self.Article_title],
             ['', '검증기사URL', self.Article_url],
-            ['', '최초검증결과', ''],
-            ['', '검증결과수정여부', ''],
-            ['', '수정검증결과', ''],
+            ['', '최초검증결과', self.Org_result],
+            ['', '검증결과수정여부', self.Is_modified],
+            ['', '수정검증결과', self.Modi_result],
             ['', '검증결과 수정시간', self.Modification_time],
             ['', '검증결과 수정이유', self.Modification_reason],
             ['', '팩트검증 기사영향력', '(댓글수)\n(이모티콘 평가 수)'],                           

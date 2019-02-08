@@ -13,6 +13,7 @@ for number in range(0, 1328):
     crawler.time()
     crawler.details()
     crawler.url_and_title()
+    crawler.result()
 
 # Excel 파일에 데이터 넣기
     # keyword argument
@@ -29,6 +30,9 @@ for number in range(0, 1328):
         detail=crawler.Details,
         article_url=crawler.Article_url,
         article_title=crawler.Article_title
+        modi_result=crawler.Modi_result
+        org_result=crawler.Org_result
+        is_modified=crawler.Is_modified
     )
 
     frame.header()

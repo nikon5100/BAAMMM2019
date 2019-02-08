@@ -1,5 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib.request
+from selenium import webdriver
+import time
 
 class Crawler(object):
 
@@ -16,6 +18,9 @@ class Crawler(object):
         self.Details = ''
         self.Article_url = ''
         self.Article_title = ''
+        self.Modi_result = ''
+        self.Org_result = ''
+        self.Is_modified = ''
         self.base_url = "http://factcheck.snu.ac.kr/v2/facts/" + str(i)
 
     def topic_and_type(self):
@@ -102,12 +107,21 @@ class Crawler(object):
             article_url = soup.find("p", class_="vf_article")
             self.Article_url = article_url.a["href"]
             self.Article_title = article_url.a.text
-    
-    # def result(self):
-    #     base_url = "http://factcheck.snu.ac.kr/v2/facts/1274"
 
-    #     with urllib.request.urlopen(base_url) as url:
-    #         doc = url.read()
-    #         soup = BeautifulSoup(doc, "html.parser")
-    #         # 검증 결과
-    #         # 파이썬에서 시간 클릭 -> 결과 크롤링 하는 방식으로
+    def result(self):
+
+        driver = webdriver.Chrome('/Users/jinyoung/Desktop/chromedriver_win32/chromedriver.exe')
+        driver.implicitly_wait(5)
+        driver.get(self.base_url)        
+
+        try:
+            driver.find_element_by_xpath('//*[@class="reg_date"]/p/a').click()
+            self.Modi_result = driver.find_element_by_xpath('//*[@class="meter-label"]').text
+            driver.find_elements_by_xpath('//*[@class="reg_date"]/ul/li')[-1].click()
+            time.sleep(5)
+            self.Org_result = driver.find_element_by_xpath('//*[@class="meter-label"]').text
+            self.Is_modified = 'yes'
+
+        except:
+            self.Org_result = driver.find_element_by_xpath('//*[@class="meter-label"]').text
+            self.Is_modified = 'no'
