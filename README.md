@@ -16,6 +16,8 @@ python 코딩 스타일 가이드
 python에서 * 사용법 이해하기
 - [Python 블로그](https://beomi.github.io)  
 Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
+- [Python 설정 파일](https://mingrammer.com/ways-to-manage-the-configuration-in-python/)  
+Python에서 설정 파일에 관
 
 #### TODO
 - [x] XlsxWriter를 이용해서 메타데이터를 파일을 만든는 코드를 만들어봅시다.  
@@ -30,7 +32,9 @@ Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 
 - [x] 크롤러를 class로 만들어서 코드에 적용해보기.
 
-- [ ] Selenium을 이용해서 가져오기 어려운 정보 크롤링
+- [x] Selenium을 이용해서 수정여부 및 검증결과 가져오기.
+
+- [ ] Selenium을 이용해서 댓글수 & 반응 가져오기
 
 #### data 정리
 - 쉽게 가져올 수 있는 것  
