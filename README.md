@@ -17,7 +17,9 @@ python에서 * 사용법 이해하기
 - [Python 블로그](https://beomi.github.io)  
 Python 과 pyspark 등 다양한 지식을 적어놓은 사이트
 - [Python 설정 파일](https://mingrammer.com/ways-to-manage-the-configuration-in-python/)  
-Python에서 설정 파일에 관
+Python에서 설정 파일에 관한 글
+- [Try Exception](https://docs.python.org/3/tutorial/errors.html)  
+Python에서 Try Except 사용법
 
 #### TODO
 - [x] XlsxWriter를 이용해서 메타데이터를 파일을 만든는 코드를 만들어봅시다.  
@@ -67,4 +69,8 @@ Pandas 와 XlsxWriter Tutorial 링크를 올림.
 클래스로 만들기 시작
 - 2019/02/02  
 class로 만든거 코드 리뷰 밑 리팩터링  
-selenium으로 크롤링하기 
+selenium으로 크롤링하기
+- 2019/02/09  
+headless chrome 으로 교체  
+서버 번호 시작 끝 지정 하는 것  
+설정 파일 만들기   
